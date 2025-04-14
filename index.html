@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Areeb Khan | Web Developer & Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: #0e0e0e;
+      color: #f1f1f1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      flex-direction: column;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #1b1b1b, #111);
+      border: 1px solid #2b2b2b;
+      border-radius: 20px;
+      padding: 50px;
+      width: 100%;
+      max-width: 850px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #00fff7;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #ffa500;
+      margin-bottom: 30px;
+      font-weight: 400;
+    }
+
+    .typing-box {
+      background-color: #121212;
+      padding: 15px;
+      border-radius: 10px;
+      font-family: monospace;
+      font-size: 1rem;
+      color: #00ffb3;
+      margin-bottom: 25px;
+      border-left: 5px solid #00ffb3;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #00ffb3; }
+    }
+
+    .typing-box.typing {
+      animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+      border-right: 2px solid #00ffb3;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #00fff7;
+      font-weight: 600;
+    }
+
+    .tech-stack {
+      margin: 30px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      background: #1a1a1a;
+      padding: 8px 15px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      color: #00ffb3;
+      border: 1px solid #00ffb3;
+      transition: 0.3s;
+    }
+
+    .badge:hover {
+      background: #00ffb3;
+      color: #0e0e0e;
+      font-weight: bold;
+    }
+
+    .contact {
+      margin-top: 20px;
+    }
+
+    .contact a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #00fff7;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      border-color: #00fff7;
+      color: #ffa500;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Areeb Khan</h1>
+    <h2>Web Developer & UI Designer</h2>
+
+    <div class="typing-box typing">
+      Coding with passion... &lt;html&gt; &lt;css&gt; &lt;js&gt; | Freelance Developer 💻
+    </div>
+
+    <p>I’m a <span class="highlight">freelance front-end developer</span> based in Karachi, Pakistan. Currently a <strong>10th Grade student</strong> at TCF School, I build stunning websites using <strong>HTML, CSS, JavaScript</strong> and modern UI design techniques.</p>
+
+    <p>I love solving problems with clean, creative code and responsive layouts. I only work <span class="highlight">online</span> and I’m always open to new projects.</p>
+
+    <div class="tech-stack">
+      <span class="badge">HTML5</span>
+      <span class="badge">CSS3</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Responsive Design</span>
+      <span class="badge">UI/UX</span>
+      <span class="badge">Freelancing</span>
+    </div>
+
+    <p><strong>Languages:</strong> English (Intermediate), Urdu (Fluent)</p>
+    <p><strong>Salary Expectation:</strong> 1,500,000 PKR</p>
+
+    <div class="contact">
+      <a href="mailto:areebkhanwebcoder@gmail.com">📧 Email</a>
+      <a href="https://wa.me/92312165208" target="_blank">📱 WhatsApp</a>
+    </div>
+
+    <p class="note">⚠️ I do not work in any office or company. Contact me directly for freelance work or collaborations.</p>
+  </div>
+
+</body>
+</html>
