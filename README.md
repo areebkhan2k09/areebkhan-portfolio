@@ -18,4 +18,4 @@ This is my personal portfolio website showcasing my skills as a **Web Developer*
 ## How to Run:
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/areebkhan-portfolio.git
+   git clone https://areebkhan2k09.github.io/areebkhan-portfolio/
